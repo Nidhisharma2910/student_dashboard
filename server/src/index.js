@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 const app = express();
 app.use(express.json());
 
-let port = process.env.PORT || 3002;
+let port = process.env.PORT || 3000;
 
 
 
@@ -29,6 +29,6 @@ app.listen(port, async (req, res) => {
   } catch (err) {
     console.error(err.message);
   }
-  console.log(`listening on port 3002`);
+  console.log(`listening on port 3000`);
   console.log("working");
 });
